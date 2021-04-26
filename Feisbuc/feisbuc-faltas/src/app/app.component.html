@@ -9,4 +9,8 @@
 
 <button (click)= "invia(name, post)">Invia</button>
 <hr>
-{{postList | json}}
+
+<div *ngFor = "let p of postList">
+  <app-post [user]="p.user"[post] = "p.post"></app-post>
+</div>
+

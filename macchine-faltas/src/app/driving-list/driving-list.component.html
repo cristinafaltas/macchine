@@ -1,0 +1,11 @@
+<p>Lista Mezzi</p>
+
+<ul>
+  <li *ngFor='let mezzo of listaMezzi'>
+    tipo mezzo: {{mezzo.tipo}} <br>
+    tariffa mezzo: {{mezzo.tariffa}} <br>
+    valutazione media mezzo: {{mezzo.valutazionemedia}} <br>
+    <button (click)="noleggia(mezzo)">Noleggia</button>
+  </li>
+
+</ul>
